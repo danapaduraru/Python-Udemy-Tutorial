@@ -78,7 +78,7 @@ students['Bob']
 tup = ('tulips','roses')
 ```
 
-```
+```python
 if ( 1 < 10):
 	print("true")
 elif ( 5 > 4 and 2 > 7):
