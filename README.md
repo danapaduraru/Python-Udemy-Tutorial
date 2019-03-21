@@ -143,3 +143,39 @@ a multi-line comment
 yay
 """
 ```
+
+```python
+# FUNCTIONS
+def SayHi(name):
+    print("Hi " + name + "! <3")
+
+SayHi("Alex")
+```
+
+```python
+# IN-BUILT FUNCTIONS
+abs(-23) => 23
+
+bool(0) => False
+bool(None) => False
+bool(100) => True - anything besides 0
+
+dir("Hello") => gives me list of all the functions i could use with that parameter
+
+help(nume.upper) => explains what the function do 
+
+sent = 'print("Hi")'
+eval(sent)
+Hi 
+
+eval(5*3)
+15
+
+a = 1
+str(a) => '1'
+float(a) => 1.0
+int(a) => 1
+
+
+
+```
