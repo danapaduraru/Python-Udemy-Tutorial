@@ -2,14 +2,14 @@
 
 ### All the basics
 
-```
+```python
 # MULTIPLE ASSIGNMENT
 diana, alex, dana = 20, 17, 21
 diana = alex = dana = 20
 name, age = 'Dana', 20
 ```
 
-```
+```python
 "Hi" * 3
 "HiHiHi"
 
@@ -24,7 +24,7 @@ std[0:-3]
 "Dana is a stud"
 ```
 
-```
+```python
 name = "Jake"
 msg = "%s is 17 years old"
 msg%name
@@ -36,7 +36,7 @@ msg("Jake",100)
 "Jake 100 is cool"
 ```
 
-```
+```python
 # LISTS
 shopList = ['Apples','Oranges','Cheese']
 
@@ -56,7 +56,7 @@ min(numberList)
 1
 ```
 
-```
+```python
 # DICTIONARIES
 students = {'Bob':12, 'Anne':13, 'Sara':15}
 students['Bob']
@@ -70,7 +70,7 @@ students['Bob']
 3
 ```
 
-```
+```python
 # TUPLES
 # are immutable : you cannot change them, delete from/update. Only access
 # you can combine 2 tuples together: tup3 = tup1 + tup2
@@ -89,7 +89,7 @@ else:
 
 ```
 
-```
+```python
 # FOR
 list = ['A','B','C']
 for item in list:
@@ -105,7 +105,7 @@ for i in range(0,10,2):
 # skips numbers like i=i+2 => 0 2 4 6 8
 ```
 
-```
+```python
 # WHILE, break, continue
 c = 0
 while c < 5:
@@ -125,7 +125,7 @@ while c < 5:
 # prints 1 2 3 4 5
 ```
 
-```
+```python
 # TRY EXCEPT
 try:
 	if(name > 3)
@@ -134,7 +134,7 @@ except:
 	print("There's something wrong with your code")
 ```
 
-```
+```python
 # COMMENTS
 # this is a comment
 """
