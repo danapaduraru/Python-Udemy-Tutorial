@@ -176,6 +176,21 @@ str(a) => '1'
 float(a) => 1.0
 int(a) => 1
 
+```
 
+### Python Core and Advanced Course
 
+```python
+a = 25.0
+print(typeof(a))
+# COMPLEX TYPES
+d = 4 + 5j
+# BINARY TYPES
+b = 0B1010
+print(b) => prints 10
+# HEXADECIMAL TYPES
+c = 0XFF
+print(c) => prints 255
+# BOOLEAN TYPES
+e = True
 ```
