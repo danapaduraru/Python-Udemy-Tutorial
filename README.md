@@ -194,3 +194,51 @@ print(c) => prints 255
 # BOOLEAN TYPES
 e = True
 ```
+
+```python
+# MORE ABOUT STRINGS
+sir = """You
+are
+awesome"""
+s[2:] => starts from index 2, goes all the way to the end
+s[:5] => start from the very beginning, go up to index 8
+s[::-1] => start from the end, get REVERSE STRING
+s.strip() => remove spaces at the beginning and at the end of string s
+s.lstrip()
+s.rstrip()
+s.find("string",startIndex,endIndex)
+s.count('a')
+s.replace("awesome","super")
+s.upper, lower, title() => You Are Awesome
+```
+
+```python
+# MORE ABOUT LISTS
+One list can have different types inside: lst = [20,4,'Bernard',10.3]
+list.append(2)
+list.remove(2)
+list.insert(3,99)
+list.sort(reverse = True)
+# [Difference between append and extend](https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python)
+```
+
+```python
+# MORE ABOUT TUPLES
+tpl = (30,)
+# if I want to define a tuple with only one element, I should use the comma after it so that it recognizes it as a tuple and not as a number
+tpl.index(30)
+tuple(list)
+```
+
+```python
+# SETS
+s = {10,20,'XYZ'}
+s.update([30,25])
+s.remove(30)
+# does not guarantee order
+# set object does not support indexing
+# is not subscriptable - does not allow slicing
+# does not allow repetition ( s*3 )
+f = frozenset(s)
+# does not allow update/remove
+```
