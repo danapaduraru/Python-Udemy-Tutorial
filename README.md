@@ -267,3 +267,8 @@ lst = [x for x in input("Enter 3 numbers separated by space: ").split()] => writ
 lst = [x for x in input("Enter 3 numbers separated by comma: ").split(',')] => write 1,2,3, you get ['1','2','3']
 lst = [int(x) for x in input("Enter 3 numbers separated by space: ").split()] => => write 1 2 3, you get [1,2,3]
 ```
+
+```
+import math
+math.pi
+```
