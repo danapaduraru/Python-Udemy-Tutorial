@@ -54,6 +54,14 @@ max(numberList)
 3
 min(numberList)
 1
+
+# One list can have different types inside: lst = [20,4,'Bernard',10.3]
+list.append(2)
+list.remove(2)
+list.insert(3,99)
+list.sort(reverse = True)
+
+[Difference between append and extend](https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python)
 ```
 
 ```python
@@ -68,6 +76,11 @@ del student['Sara']
 dont = {'Bob':1,'Bob':2,'Bob':3}
 students['Bob']
 3
+
+dict.items()
+dict.keys()
+dict.values()
+
 ```
 
 ```python
@@ -76,6 +89,10 @@ students['Bob']
 # you can combine 2 tuples together: tup3 = tup1 + tup2
 # del tup, len tup, tup + 4
 tup = ('tulips','roses')
+tpl = (30,)
+# if I want to define a tuple with only one element, I should use the comma after it so that it recognizes it as a tuple and not as a number
+tpl.index(30)
+tuple(list)
 ```
 
 ```python
@@ -213,24 +230,6 @@ s.upper, lower, title() => You Are Awesome
 ```
 
 ```python
-# MORE ABOUT LISTS
-One list can have different types inside: lst = [20,4,'Bernard',10.3]
-list.append(2)
-list.remove(2)
-list.insert(3,99)
-list.sort(reverse = True)
-# [Difference between append and extend](https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python)
-```
-
-```python
-# MORE ABOUT TUPLES
-tpl = (30,)
-# if I want to define a tuple with only one element, I should use the comma after it so that it recognizes it as a tuple and not as a number
-tpl.index(30)
-tuple(list)
-```
-
-```python
 # SETS
 s = {10,20,'XYZ'}
 s.update([30,25])
@@ -241,4 +240,30 @@ s.remove(30)
 # does not allow repetition ( s*3 )
 f = frozenset(s)
 # does not allow update/remove
+```
+
+```python
+a**b  => a to the power of b
+a//b => returns integer always, while a/b returns float
+we also have **= and //=
+```
+
+```python
+#INPUT/OUTPUT FUNCTIONS
+a,b= 10, 20
+print(a,b,sep=',') => 10,20
+name = 'Dana'
+mark = 10.5
+print('name is ', name)
+print("name is %s, mark is %f"%(name,mark)) => name is Dana, mark is 10.500000
+print("name is %s, mark is %2.f"%(name,mark)) => name is Dana, mark is 10.50
+print("name is {}, mark is {}".format(name, mark))
+print("name is {0}, mark is {1}".format(name, mark))
+
+s = input("Enter your name: ")
+i = int(input("Enter your number: "))
+
+lst = [x for x in input("Enter 3 numbers separated by space: ").split()] => write 1 2 3, you get ['1','2','3']
+lst = [x for x in input("Enter 3 numbers separated by comma: ").split(',')] => write 1,2,3, you get ['1','2','3']
+lst = [int(x) for x in input("Enter 3 numbers separated by space: ").split()] => => write 1 2 3, you get [1,2,3]
 ```
