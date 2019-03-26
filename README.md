@@ -345,4 +345,17 @@ l = lambda a,b: a+b
 
 lst = [1,2,3,4,5]
 result = list(filter(lambda x:x%2==0,lst))
+
+lst = [2,3,4,5]
+result = list(map(lambda n:n*2, lst))
+print(result) => [4,6,8,10]
+
+lst = [5,10,15,20]
+result = reduce(lambda x,y:x+y, lst)
+print(result) => 50
+```
+
+```python
+# A decorator takes a function and it will return a function but the function that is returned by
+# the decorator will perform additional logic or additional processing on the function that is given as input.
 ```
