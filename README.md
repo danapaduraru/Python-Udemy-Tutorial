@@ -268,7 +268,64 @@ lst = [x for x in input("Enter 3 numbers separated by comma: ").split(',')] => w
 lst = [int(x) for x in input("Enter 3 numbers separated by space: ").split()] => => write 1 2 3, you get [1,2,3]
 ```
 
-```
+```python
 import math
 math.pi
+```
+
+```python
+x = (int(input("Enter a number greater than 10"))
+assert x>10, "Wrong number"
+print("you entered ",x)
+```
+
+```python
+import sys
+
+list = sys.argv
+for i in list: print(i,' ')
+```
+
+```python
+Functions can return multiple values!!!
+def f(a,b):
+	return a+b, a-b
+result = f(2,3)
+print(type(result)) => tuple
+```
+
+```python
+x = 1
+def display():
+	x = 2
+	print(x)
+	print(globals['x'])
+f = display
+f()
+f()
+```
+
+```python
+def display():
+	def message():
+		return "hi"
+	return message
+
+fun = display()
+print(fun()) => hi
+```
+
+```python
+# keyword arguments
+def display(a,b)
+	print(a,',',b)
+
+display(10,20) => 10,20
+display(b=10, a=20) => 20,10
+
+# default arguments
+# we can do this too:
+def display(a = 10,b = 20)
+	print(a,',',b)
+display(a=30) => 30,20  #sweet
 ```
