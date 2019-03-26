@@ -329,3 +329,20 @@ def display(a = 10,b = 20)
 	print(a,',',b)
 display(a=30) => 30,20  #sweet
 ```
+
+```python
+# LAMBDA FUNCTIONS
+instead of:
+def cube(x)
+	return x**3
+# just write: 
+f = lambda x:x**3
+print(f(2))
+# will always return a function back
+# rarely using them like this. they are very useful when we use them inside other functions
+l = lambda x : 'EVEN' if x%2 == 0 else 'ODD'
+l = lambda a,b: a+b
+
+lst = [1,2,3,4,5]
+result = list(filter(lambda x:x%2==0,lst))
+```
