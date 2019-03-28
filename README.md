@@ -358,4 +358,110 @@ print(result) => 50
 ```python
 # A decorator takes a function and it will return a function but the function that is returned by
 # the decorator will perform additional logic or additional processing on the function that is given as input.
+def decor(fun):
+	def inner():
+		result = fun()
+		return result*2
+	return inner
+
+def num():
+	return 5
+
+resultfun = decor(num)
+print(resultfun()) => 10
+
+# METHOD 2. after writing def decorfun(fun): ...
+
+@decorfun
+def num():
+	return 5
+	
+print(num())
+
+# Another example:
+def decorfun(fun):
+	def inner(n):
+		result = fun(n)
+		result += " How are you?"
+		return result
+	return inner
+
+@decorfun
+def hello(name)
+	return "Hello " + name
+	
+print(hello("Dana")) => Hello Dana How are you?
 ```
+
+```python
+# GENERATORS
+# Generators are functions that return a sequence of values back
+# A generator function is returned just like any other function but it uses a yield statement
+
+def customgen(x,y):
+	while x<y
+		yield x
+		x+=1
+		
+result = customgen(20,30)
+for i in result: print(i) => 20 21 ... 29
+```
+
+```python
+import mymath as ma
+
+print(ma.sum(19,4))
+
+# METHOD 2
+
+from mymath import*
+print(sum(2,2))
+```
+
+```python
+# LIST EXTRAS
+# instead of:
+lst=[]
+for x in range (1,11)
+	lst.append(x**3)
+print(lst)
+
+lst=[]
+lst = x**3 for x in range(1,11)
+
+-------------------------------------
+
+lst = [x for x in range(1,21) if x%2==0]
+
+a=[1,2,3]
+b=[3,45,5]
+z = []
+z =[a[i]*b[i] for i in range(len(a))]
+
+commonElements = [i for i in a if i in b]
+```
+
+```python
+# STATIC METHODS
+class ObjCounter:
+	nrOfObj = 0
+	
+	def __init__(self):
+		ObjectCounter.nrOfObj += 1
+
+	@staticmethod
+	def displayCount():
+		print(ObjCounter.nrOfObj)
+
+o1 = ObjCounter()
+o2 = ObjCounter()
+
+ObjCounter.displayCount() => 2
+```
+
+```python
+self.__id=123 => makes it PRIVATE
+print(s._Student__id)
+# name mangling
+```
+
